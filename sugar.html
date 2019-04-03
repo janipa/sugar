@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sugar</title>
+   <style>
+    input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(245, 242, 242);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+    input[type=submit] {
+    background-color: #4CAF50;
+    color: rgb(202, 198, 198);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+    background-color: #45a049;
+    }
+
+    .container {
+    border-radius: 5px;
+    background-color:rgb(226, 43, 128);
+    padding: 20px;
+    }
+  </style>
+</head>
+<body>
+    <h1>Data Pasien</h1>
+    <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" aria-placeholder="month">
+        <select>
+            <option value="month">month</option>
+            <option value="year">year</option>
+        </select>
+        <label for="sex">sex</label>
+        <select id="sex" name="sex">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+
+        <label for="anamnesa">Anamnesa</label>
+        <input type="text" id="anamnesa" name="anamnesa">
+
+        <label for="Riwayat Penyakit">Riwayat penyakit</label>
+        <input type="text" id="Riwayat penyakit">
+    
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+</body>
+</html>
